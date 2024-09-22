@@ -1,0 +1,166 @@
+"----------first---------------------
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+"----------general-------------------
+set nocompatible
+"----------bash or zsh if you installed
+set shell=zsh
+set splitbelow
+set splitright
+filetype on
+filetype plugin on
+filetype indent on
+filetype plugin indent on
+set confirm
+set backspace=indent,eol,start
+set autochdir
+set belloff=cursor,esc,error
+set vb
+set hidden
+set confirm
+set termguicolors
+"----------appearence----------------
+set t_Co=256
+set background=dark
+"colorscheme jellybeans
+"set cursorline
+"set cursorcolumn
+set number
+set ruler
+"----------search--------------------
+set ignorecase
+set smartcase
+set hlsearch
+set incsearch
+"----------indent--------------------
+set cindent
+set smartindent
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set smarttab
+"----------statusline----------------
+set laststatus=2
+set showcmd
+set noshowmode
+set fileencodings=utf-8,utf-16,big5,gb2312,gbk,gb18030,euc-jp,euc-kr,latin1
+set encoding=utf-8
+"----------key_mapping---------------
+"-leader-
+map <space> <leader>
+"-clean_search_highlight-
+map <leader><Esc> :noh<enter>
+map zn :set relativenumber!<enter>
+"-windows-
+map <leader>h <c-w>h
+map <leader>j <c-w>j
+map <leader>k <c-w>k
+map <leader>l <c-w>l
+map <leader>q <c-w>q
+"-explores-
+map <leader>ee :Explore<enter>
+map <leader>ev :Vexplore!<enter>
+map <leader>eh :Hexplore<enter>
+"-terminals-
+nnoremap <silent> <leader>tt :FloatermNew<enter>
+nnoremap <a-i> :FloatermToggle<enter>
+tnoremap <a-n> <c-w>:FloatermNext<enter>
+tnoremap <a-p> <c-w>:FloatermPrev<enter>
+tnoremap <esc><space> <c-w>N
+tnoremap <a-i> <c-w>:FloatermToggle<enter>
+tnoremap <a-k> <c-w>:FloatermKill<enter>
+"-tabs-
+nnoremap <silent> <leader>te :tabe<enter>
+nnoremap <silent> <leader>tc :tabc<enter>
+nnoremap <silent> <leader>td :tabo<enter>
+nnoremap <silent> <leader>tb :tabs<enter>
+"-nerdtree-
+nnoremap <silent> <c-n> :NERDTreeToggle<enter>
+"-buffer_control-
+nnoremap <silent> <leader>bd :bdelete<enter>
+nnoremap <silent> <leader>n :bn<enter>
+nnoremap <silent> <leader>p :bp<enter>
+nnoremap <silent> <tab> :bn<enter>
+nnoremap <silent> <s-tab> :bp<enter>
+"-split-
+nnoremap <leader><space>- :sp<enter>
+nnoremap <leader><space>= :vs<enter>
+nnoremap <leader>O :only<enter>
+"-split_window_size_control-
+nnoremap <leader>= <c-w>+
+nnoremap <leader>- <c-w>-
+nnoremap <leader>, <c-w><
+nnoremap <leader>. <c-w>>
+"-quit-
+nnoremap <leader><space>q :q<enter>
+"-scrollbind-
+nnoremap <leader>sb :windo set scb!<enter>
+"-diff-
+nnoremap <leader>df :windo diffthis<enter>
+nnoremap <leader>do :windo diffoff<enter>
+nnoremap <leader>dg :diffget<enter>
+"-markdown-
+nnoremap <leader>m<space> :InstantMarkdownPreview<enter>
+nnoremap <leader>ms :InstantMarkdownStop<enter>
+"-comment-
+nnoremap <silent> <c-/> V:call nerdcommenter#Comment('x', 'toggle')<CR>
+vnoremap <silent> <c-/> :call nerdcommenter#Comment('x', 'toggle')<CR>
+"map <leader>c<space> toggleComment
+"-scroll-in-insert-mode-
+inoremap <c-e> <c-o><c-e>
+inoremap <c-y> <c-o><c-y>
+"-move-current-line-
+nnoremap <silent> <c-j> :m .+1<enter>==
+nnoremap <silent> <c-k> :m .-2<enter>==
+vnoremap <silent> <c-j> :m '>+1<enter>gv=gv
+vnoremap <silent> <c-k> :m '<-2<enter>gv=gv
+"-add-blank-line-
+nnoremap zj o<c-[>k
+nnoremap zk O<c-[>j
+"----------plugin--------------------
+call plug#begin('~/.vim/plugged')
+
+Plug 'preservim/nerdcommenter'
+Plug 'preservim/nerdtree'
+Plug 'ryanoasis/vim-devicons'
+Plug 'philrunninger/nerdtree-visual-selection'
+Plug 'vim-airline/vim-airline'
+Plug 'godlygeek/tabular'
+Plug 'preservim/vim-markdown'
+Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
+Plug 'voldikss/vim-floaterm'
+Plug 'tmhedberg/SimpylFold'
+Plug 'iqxd/vim-mine-sweeping'
+Plug 'tpope/vim-surround'
+Plug 'alvan/vim-closetag'
+Plug 'LunarWatcher/auto-pairs'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+Plug 'jasonccox/vim-wayland-clipboard'
+Plug 'bronson/vim-visual-star-search'
+Plug 'dracula/vim', { 'as': 'dracula' }
+
+call plug#end()
+"----------plugin_config-------------
+let g:NERDTreeDirArrowExpandable = '*'
+let g:NERDTreeDirArrowCollapsible = '^'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_sep = '|'
+let g:instant_markdown_autostart = 0
+let g:vim_markdown_no_default_key_mappings = 1
+let g:vim_markdown_folding_level = 3
+let g:AutoPairsMapBS = 1
+let g:closetag_enable_react_fragment = 1
+let g:closetag_filetypes = 'html,xhtml,phtml'
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
+let g:AutoPairsLanguagePairs = { "html": {'<': ''} }
+"let g:instant_markdown_slow = 1
+"----------highlight-----------------
+highlight CursorLine cterm=none ctermbg=235 ctermfg=none
+highlight Cursorcolumn cterm=none ctermbg=235 ctermfg=none
+"highlight CurSearch cterm=none ctermbg=57 ctermfg=White
+"highlight Search cterm=bold,reverse,underline ctermbg=none ctermfg=none
+colorscheme dracula
