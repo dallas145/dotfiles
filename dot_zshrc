@@ -1,0 +1,38 @@
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+bindkey -e
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/neil/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+export PATH=$PATH:/home/neil/.local/bin
+
+eval "$(oh-my-posh init zsh --config ~/.config/oh_my_posh/mytheme.omp.json)"
+
+# yazi shell wrapper
+function yz() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
+# custom zsh key binding -> Ctrl + o to open yazi
+bindkey -s '^o' 'yz^M'
+
+export EDITOR="vim"
+
+alias ls='lsd'
+alias ll='lsd -l'
+alias la='lsd -al'
+
+eval "$(spotify_player generate zsh)"
+eval "$(zoxide init zsh)"
+eval "$(fzf --zsh)"
