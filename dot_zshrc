@@ -2,7 +2,7 @@
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
-bindkey -e
+#bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/neil/.zshrc'
@@ -39,3 +39,5 @@ fi
 eval "$(spotify_player generate zsh)"
 eval "$(zoxide init zsh)"
 eval "$(fzf --zsh)"
+#bindkey -v
+source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
