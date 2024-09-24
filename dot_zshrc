@@ -24,9 +24,6 @@ function yz() {
 	rm -f -- "$tmp"
 }
 
-# custom zsh key binding -> Ctrl + o to open yazi
-bindkey -s '^o' 'yz^M'
-
 export EDITOR="vim"
 
 alias ls='lsd'
@@ -39,5 +36,8 @@ fi
 eval "$(spotify_player generate zsh)"
 eval "$(zoxide init zsh)"
 eval "$(fzf --zsh)"
-#bindkey -v
-source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+bindkey -v
+
+# custom zsh key binding -> Ctrl + o to open yazi
+bindkey -s '^o' 'yz^M'
+#source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
