@@ -61,9 +61,9 @@ map <leader>k <c-w>k
 map <leader>l <c-w>l
 map <leader>q <c-w>q
 "-explores-
-map <leader>ee :Explore<enter>
-map <leader>ev :Vexplore!<enter>
-map <leader>eh :Hexplore<enter>
+"map <leader>ee :Explore<enter>
+"map <leader>ev :Vexplore!<enter>
+"map <leader>eh :Hexplore<enter>
 "-terminals-
 nnoremap <silent> <leader>tt :FloatermNew<enter>
 nnoremap <a-i> :FloatermToggle<enter>
@@ -78,7 +78,7 @@ nnoremap <silent> <leader>tc :tabc<enter>
 nnoremap <silent> <leader>td :tabo<enter>
 nnoremap <silent> <leader>tb :tabs<enter>
 "-nerdtree-
-nnoremap <silent> <c-n> :NERDTreeToggle<enter>
+nnoremap <silent> <leader>ee :NERDTreeToggle<enter>
 "-buffer_control-
 nnoremap <silent> <leader>bd :bdelete<enter>
 nnoremap <silent> <leader>n :bn<enter>
@@ -150,6 +150,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_sep = '|'
 let g:instant_markdown_autostart = 0
+let g:instant_markdown_browser = 'brave --new-window'
 let g:instant_markdown_allow_external_content = 1
 let g:instant_markdown_theme = 'dark'
 let g:vim_markdown_no_default_key_mappings = 1
