@@ -120,6 +120,9 @@ vnoremap <silent> <c-k> :m '<-2<enter>gv=gv
 "-add-blank-line-
 nnoremap zj o<c-[>k
 nnoremap zk O<c-[>j
+"yazi-filemanager-
+nnoremap <silent> - :Yazi<cr>
+nnoremap <silent> _ :YaziWorkingDirectory<cr>"
 "----------plugin--------------------
 call plug#begin('~/.vim/plugged')
 
@@ -141,6 +144,7 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'jasonccox/vim-wayland-clipboard'
 Plug 'bronson/vim-visual-star-search'
 Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'chriszarate/yazi.vim'
 
 call plug#end()
 "----------plugin_config-------------
