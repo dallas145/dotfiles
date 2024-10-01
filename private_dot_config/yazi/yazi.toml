@@ -54,11 +54,16 @@ play = [
 	{ run = 'mpv --force-window %*', orphan = true, for = "windows" },
 	{ run = '''mediainfo "$1"; echo "Press enter to exit"; read _''', block = true, desc = "Show media info", for = "unix" },
 ]
+markdown = [
+	{ run = 'glow "$@"', block = true, desc = "view (glow)", for = "linux" },
+]
 
 [open]
 rules = [
 	# Folder
 	{ name = "*/", use = [ "edit", "open", "reveal" ] },
+	# Markdown
+	{ name = "*.md", use = [ "edit", "markdown", "open", "reveal" ] },
 	# Text
 	{ mime = "text/*", use = [ "edit", "reveal" ] },
 	# Image
