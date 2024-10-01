@@ -84,7 +84,7 @@ config.integrated_title_buttons = { 'Hide', 'Maximize', 'Close' }
 
 -- Window
 config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
-config.window_background_opacity = 0.8
+config.window_background_opacity = 0.85
 
 -- shell
 --config.default_prog = { 'pwsh.exe', '-NoLogo'}
