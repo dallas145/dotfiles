@@ -18,7 +18,7 @@ set confirm
 set backspace=indent,eol,start
 set autochdir
 set belloff=cursor,esc,error
-set vb
+set novb
 set hidden
 set confirm
 set termguicolors
