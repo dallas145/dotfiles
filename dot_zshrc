@@ -16,6 +16,12 @@ autoload -Uz compinit && compinit
 
 zinit cdreplay -q
 
+# zinit plugins
+zinit light zdharma-continuum/fast-syntax-highlighting
+zinit light zsh-users/zsh-completions
+zinit light zsh-users/zsh-autosuggestions
+zinit light Aloxaf/fzf-tab
+
 # keybindings
 bindkey -v
 bindkey '^p' history-search-backward
@@ -70,9 +76,3 @@ function yz() {
 # environment variables
 export EDITOR="vim"
 export CLICOLOR_FORCE=1
-
-# zinit plugins
-zinit light zdharma-continuum/fast-syntax-highlighting
-zinit light zsh-users/zsh-completions
-zinit light zsh-users/zsh-autosuggestions
-zinit light Aloxaf/fzf-tab
