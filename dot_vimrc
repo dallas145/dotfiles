@@ -145,6 +145,7 @@ Plug 'jasonccox/vim-wayland-clipboard'
 Plug 'bronson/vim-visual-star-search'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'chriszarate/yazi.vim'
+Plug 'machakann/vim-sandwich'
 
 call plug#end()
 "----------plugin_config-------------
