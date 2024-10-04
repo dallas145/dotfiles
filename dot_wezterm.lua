@@ -39,30 +39,34 @@ config.window_padding = {
 }
 
 -- Fonts
+--config.font = wezterm.font_with_fallback {
+	--{ family = 'CaskaydiaCove Nerd Font Mono', weight = 'DemiBold' },
+	--{ family = 'Noto Sans CJK TC', weight = 'Regular' },
+--}
 config.font = wezterm.font_with_fallback {
-	{ family = 'CaskaydiaCove Nerd Font Mono', weight = 'DemiBold' },
-	{ family = 'Noto Sans CJK TC', weight = 'Regular' },
+	{ family = 'Blex Mono Nerd Font', weight = 'DemiBold' },
+	{ family = 'IBM Plex Sans TC', weight = 'Regular' },
 }
 --config.font = wezterm.font('CaskaydiaCove Nerd Font Mono', { weight = 'DemiBold' })
-config.font_rules = {
-	{
-		intensity = 'Half',
-		italic = true,
-		font = wezterm.font {
-			family = 'CaskaydiaCove Nerd Font Mono',
-			weight = 'Light',
-			style = 'Italic',
-		},
-	},
-	{
-		intensity = 'Half',
-		italic = false,
-		font = wezterm.font {
-			family = 'CaskaydiaCove Nerd Font Mono',
-			weight = 'Light',
-		},
-	},
-}
+--config.font_rules = {
+	--{
+		--intensity = 'Half',
+		--italic = true,
+		--font = wezterm.font {
+			--family = 'CaskaydiaCove Nerd Font Mono',
+			--weight = 'Light',
+			--style = 'Italic',
+		--},
+	--},
+	--{
+		--intensity = 'Half',
+		--italic = false,
+		--font = wezterm.font {
+			--family = 'CaskaydiaCove Nerd Font Mono',
+			--weight = 'Light',
+		--},
+	--},
+--}
 --config.font = wezterm.font('DejaVuSansM Nerd Font Mono', { weight = 'Bold' })
 --config.font = wezterm.font('JetBrainsMonoNL Nerd Font', { weight = 'Bold' })
 --config.font = wezterm.font('MesloLGM Nerd Font Mono', { weight = 'Bold' })
