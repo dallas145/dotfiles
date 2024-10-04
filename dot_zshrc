@@ -42,7 +42,7 @@ eval "$(oh-my-posh init zsh --config ~/.config/oh_my_posh/mytheme.omp.json)"
 # shell integrations
 eval "$(spotify_player generate zsh)"
 eval "$(fzf --zsh)"
-eval "$(zoxide init zsh)"
+eval "$(zoxide init zsh --cmd cd)"
 
 # completion style
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
@@ -57,6 +57,7 @@ alias ll='lsd -l'
 alias la='lsd -al'
 
 # custom function
+# yazi shell integration
 function yz() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
 	yazi "$@" --cwd-file="$tmp"
