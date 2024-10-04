@@ -31,7 +31,7 @@
         {
           "type": "session",
           "style": "plain",
-          "template": "<cyan>{{ .UserName }}</> <darkGray>@</> <green>{{ .HostName }}</> "
+          "template": "<cyan>{{ .UserName }}</> <lightYellow>@</> <green>{{ .HostName }}</> "
         },
         {
           "type": "time",
@@ -44,7 +44,13 @@
           "style": "plain",
           "foreground": "red",
           "template": " C:{{ if gt .Code 0 }}{{ .Code }}{{ end }} "
-        }
+        },
+		{
+			"type": "text",
+			"style": "plain",
+			"foreground": "red",
+			"template": "{{ if gt .SHLVL 1 }} depth: {{ .SHLVL }}{{ end }}"
+		}
       ],
       "newline": true
     },
