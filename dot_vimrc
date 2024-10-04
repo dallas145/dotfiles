@@ -66,12 +66,12 @@ map <leader>q <c-w>q
 "map <leader>eh :Hexplore<enter>
 "-terminals-
 nnoremap <silent> <leader>tt :FloatermNew<enter>
-nnoremap <a-i> :FloatermToggle<enter>
-tnoremap <a-n> <c-w>:FloatermNext<enter>
-tnoremap <a-p> <c-w>:FloatermPrev<enter>
+nnoremap i :FloatermToggle<enter>
+tnoremap n <c-w>:FloatermNext<enter>
+tnoremap p <c-w>:FloatermPrev<enter>
 tnoremap <esc><space> <c-w>N
-tnoremap <a-i> <c-w>:FloatermToggle<enter>
-tnoremap <a-k> <c-w>:FloatermKill<enter>
+tnoremap i <c-w>:FloatermToggle<enter>
+tnoremap k <c-w>:FloatermKill<enter>
 "-tabs-
 nnoremap <silent> <leader>te :tabe<enter>
 nnoremap <silent> <leader>tc :tabc<enter>
