@@ -145,6 +145,7 @@ prepend_previewers = [
 	{ mime = "application/x-xz",				run = "ouch" },
 	{ name = "*.csv",	run = "rich-preview" },
 	{ name = "*.md",	run = "glow" },
+	#{ name = "*.md",	run = "mdcat" },
 	{ name = "*.ipynb", run = "rich-preview" },
 	{ name = "*.json",	run = "rich-preview" },
 ]
