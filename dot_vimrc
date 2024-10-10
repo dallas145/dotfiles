@@ -22,6 +22,7 @@ set novb
 set hidden
 set confirm
 set termguicolors
+set scrolloff=3
 "----------appearence----------------
 set t_Co=256
 set background=dark
