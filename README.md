@@ -12,10 +12,15 @@ My dotfiles managed by chezmoi.
 - Yazi
 - [spotify_player](https://github.com/aome510/spotify-player)
     * [librespot-auth](https://github.com/dspearson/librespot-auth)
+- bottom
+- [nb](https://xwmx.github.io/nb/)
 - Brave Browser
 - aria2
-    * Motrix
+    * imFile
     * aria2 Explorer
+- FileCentipede
+- Resilio sync
+- ~~stashapp~~
 
 > todo:<br>
 > - [ ] informations of apps
