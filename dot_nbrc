@@ -15,3 +15,5 @@
 export NB_MARKDOWN_TOOL="mdcat"
 export NB_IMAGE_TOOL="viu"
 export NB_DIRECTORY_TOOL="lsd"
+
+export NB_AUTO_SYNC="${NB_AUTO_SYNC:-0}" # Set by `nb` • 西元2024年10月13日 (週日) 16時47分51秒 CST
