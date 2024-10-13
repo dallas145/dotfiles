@@ -8,6 +8,8 @@ My dotfiles managed by chezmoi.
 - Zsh
 - Oh My Posh
 - lsd(LSDeluxe)
+- [mdcat](https://github.com/swsnr/mdcat)
+- [viu](https://github.com/atanunq/viu)
 - Vim
 - Yazi
 - [spotify_player](https://github.com/aome510/spotify-player)
