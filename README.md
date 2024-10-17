@@ -24,6 +24,11 @@ My dotfiles managed by chezmoi.
 - Resilio sync
 - ~~stashapp~~
 
+## Fonts
+- Blex Mono Nerd Font
+- IBM Plex Sans TC
+- CaskaydiaCove Nerd Font Mono
+
 > todo:<br>
 > - [ ] informations of apps
 > - [ ] dependencies
