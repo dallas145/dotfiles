@@ -11,6 +11,7 @@ My dotfiles managed by chezmoi.
 - [mdcat](https://github.com/swsnr/mdcat)
 - [viu](https://github.com/atanunq/viu)
 - Vim
+- wl-clipboard(if using wayland)
 - Yazi
 - [spotify_player](https://github.com/aome510/spotify-player)
     * [librespot-auth](https://github.com/dspearson/librespot-auth)
