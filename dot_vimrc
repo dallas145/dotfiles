@@ -126,6 +126,9 @@ nnoremap <silent> - :Yazi<cr>
 nnoremap <silent> _ :YaziWorkingDirectory<cr>"
 "-Goyo-
 nnoremap <silent> <leader>z :Goyo<cr>
+"-Limelight-
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
 "----------plugin--------------------
 call plug#begin('~/.vim/plugged')
 
@@ -150,6 +153,7 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'chriszarate/yazi.vim'
 Plug 'machakann/vim-sandwich'
 Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
 Plug 'amix/vim-zenroom2'
 
 call plug#end()
