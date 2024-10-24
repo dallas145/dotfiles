@@ -24,6 +24,7 @@ My dotfiles managed by chezmoi.
 - FileCentipede
 - Resilio sync
 - ~~stashapp~~
+- git-delta
 
 ## Fonts
 - Blex Mono Nerd Font
