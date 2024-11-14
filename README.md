@@ -34,11 +34,15 @@ My dotfiles managed by chezmoi.
 - Noto Sans CJK
 
 ## Note
-If input method not working in onlyoffice, try to add these lines to the bottom of `/usr/bin/onlyoffice-desktopeditors`
+- If input method not working in onlyoffice, try to add these lines to the bottom of `/usr/bin/onlyoffice-desktopeditors`
 ```
 GTK_IM_MODULE="fcitx"
 QT_IM_MODULE="fcitx"
 XMODIFIERS="@im=fcitx"
+```
+- If fcitx not working in some chromium browser, add this to desktop entry:<br>
+```
+--enable-features=UseOzonePlatform --ozone-platform=wayland --enable-wayland-ime
 ```
 
 > todo:<br>
