@@ -28,7 +28,7 @@ My dotfiles managed by chezmoi.
 
 ## Note
 
-To use chromium based browser, use these flags below:
+To use chromium based browser under wayland, use these flags below:
 
 ```conf
 --enable-features=UseOzonePlatform --ozone-platform=wayland --enable-wayland-ime
