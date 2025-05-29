@@ -1,0 +1,15 @@
+#!/bin/bash
+
+VESKTOP_LOCATION=$HOME/.local/share/applications/vesktop.desktop
+ping www.google.com -W 10 -c 3 > /dev/null
+
+if [ $? -eq 0 ]; then
+	if [ -f $VESKTOP_LOCATION ]; then
+		dex $VESKTOP_LOCATION
+		notify-send "Auto Start" "Starting <b>Vesktop</b>..."
+	else
+		notify-send "Auto Start" "<b>\"Vesktop\"</b> is not in $VESKTOP_LOCATION"
+	fi
+else
+	notify-send "Auto Start" "<b>Your device is not connect to the Internet.</b>"
+fi

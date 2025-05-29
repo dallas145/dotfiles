@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# This is from https://github.com/hyprwm/Hyprland/issues/5351
+
+STATUS=$(hyprctl activewindow -j | jq ."floating")
+
+if [[ $STATUS == "true" ]]; then
+	hyprctl dispatch focuswindow tiled;
+else
+	hyprctl dispatch focuswindow floating;
+fi

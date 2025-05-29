@@ -1,5 +1,6 @@
-README.md
 # yazi
-**/plugins/**/*
-**/flavors/**/*
-bookmark
+**/yazi/plugins
+**/yazi/flavors
+**/yazi/*default*
+**/yazi/*.bak
+**/yazi/bookmark

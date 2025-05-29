@@ -1,0 +1,19 @@
+#!/bin/bash
+
+input=/home/$USER/.config/hypr/scripts/autostart.txt
+
+main() {
+	while IFS= read -r line;
+	do
+		hyprctl dispatch -- exec $(echo $line)
+		notify-send --urgency=low --app-name="AutoStart" --icon=terminal-symbolic "Auto Start" "Auto starting\n<b>$line</b>"
+	done < $input
+}
+
+ping www.google.com -W 10 -c 3 > /dev/null
+
+if [ $? -eq 0 ]; then
+	main
+else
+	notify-send --urgency=low --app-name="AutoStart" --icon=network-offline-symbolic "Auto Start" "No Internet connection.\nAuto starting failed."
+fi

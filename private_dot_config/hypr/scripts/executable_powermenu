@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# # Store the cursor position
+# pos=$(hyprctl cursorpos | sed 's/,//g')
+# # Get the size of monitor to get the x,y value of bottom right position
+# bottomRight=$(hyprctl monitors -j | jq '[.[0].["width"], .[0].["height"]]' | jq '.|join(" ")' -r)
+# # Set cursor postition to the bottom right of monitor before start wlogout
+# hyprctl -q dispatch movecursor $bottomRight
+# # Start wlogout
+# pidof wlogout || wlogout -b 5 -L 50 -R 50 -T 300 -B 300 -c 30 -s
+# # Resume cursor position
+# hyprctl -q dispatch movecursor $pos
+
+pidof wlogout || wlogout -b 5 -L 50 -R 50 -T 300 -B 300 -c 30 -s

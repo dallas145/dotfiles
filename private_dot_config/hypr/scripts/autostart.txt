@@ -1,0 +1,2 @@
+vesktop
+spotify_player -d
