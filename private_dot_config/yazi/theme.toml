@@ -18,7 +18,7 @@ select_alt	= { fg = "#f8f8f2", bg = "#44475a" }
 unset_main	= { fg = "#282a36", bg = "red", bold = true }
 unset_alt	= { fg = "#f8f8f2", bg = "#44475a" }
 
-[manager]
+[mgr]
 
 count_copied   = { fg = "#282a36", bg = "green" }
 count_cut      = { fg = "#282a36", bg = "red" }

@@ -1,99 +1,119 @@
-[[manager.prepend_keymap]]
-on   = "o"
-run  = "open --interactive"
+[[mgr.prepend_keymap]]
+on = "o"
+run = "open --interactive"
 desc = "Open selected files interactively"
 
-[[manager.prepend_keymap]]
-on   = "O"
-run  = "open"
+[[mgr.prepend_keymap]]
+on = "O"
+run = "open"
 desc = "Open selected files"
 
-[[manager.prepend_keymap]]
-on   = "A"
-run  = "create --dir"
+[[mgr.prepend_keymap]]
+on = "A"
+run = "create --dir"
 desc = "Create a directory"
 
-[[manager.prepend_keymap]]
-on	 = "T"
-run  = "plugin toggle-pane max-preview"
+[[mgr.prepend_keymap]]
+on = "T"
+run = "plugin toggle-pane max-preview"
 desc = "Maximize or restore the preview pane"
 
-[[manager.prepend_keymap]]
-on   = [ "c", "a" ]
-run  = "plugin compress"
+[[mgr.prepend_keymap]]
+on = ["c", "a", "a"]
+run = "plugin compress"
 desc = "Archive selected files"
 
-[[manager.prepend_keymap]]
-on	 = ["c", "A"]
-run	 = "plugin ouch"
+[[mgr.prepend_keymap]]
+on = ["c", "a", "p"]
+run = "plugin compress -p"
+desc = "Archive selected files (password)"
+
+[[mgr.prepend_keymap]]
+on = ["c", "a", "h"]
+run = "plugin compress -ph"
+desc = "Archive selected files (password+header)"
+
+[[mgr.prepend_keymap]]
+on = ["c", "a", "l"]
+run = "plugin compress -l"
+desc = "Archive selected files (compression level)"
+
+[[mgr.prepend_keymap]]
+on = ["c", "a", "u"]
+run = "plugin compress -phl"
+desc = "Archive selected files (password+header+level)"
+
+[[mgr.prepend_keymap]]
+on = ["c", "A"]
+run = "plugin ouch"
 desc = "Compress with ouch"
 
-[[manager.prepend_keymap]]
-on	 = ["c", "m"]
-run  = "plugin chmod"
+[[mgr.prepend_keymap]]
+on = ["c", "m"]
+run = "plugin chmod"
 desc = "Chmod on selected files"
 
-[[manager.prepend_keymap]]
-on	 = ["g", "i"]
-run	 = "plugin lazygit"
+[[mgr.prepend_keymap]]
+on = ["g", "i"]
+run = "plugin lazygit"
 desc = "run lazygit"
 
-[[manager.prepend_keymap]]
-on = [ "u", "a" ]
+[[mgr.prepend_keymap]]
+on = ["u", "a"]
 run = "plugin yamb save"
 desc = "Add bookmark"
 
-[[manager.prepend_keymap]]
-on = [ "u", "g" ]
+[[mgr.prepend_keymap]]
+on = ["u", "g"]
 run = "plugin yamb jump_by_key"
 desc = "Jump bookmark by key"
 
-[[manager.prepend_keymap]]
-on = [ "u", "G" ]
+[[mgr.prepend_keymap]]
+on = ["u", "G"]
 run = "plugin yamb jump_by_fzf"
 desc = "Jump bookmark by fzf"
 
-[[manager.prepend_keymap]]
-on = [ "u", "d" ]
+[[mgr.prepend_keymap]]
+on = ["u", "d"]
 run = "plugin yamb delete_by_key"
 desc = "Delete bookmark by key"
 
-[[manager.prepend_keymap]]
-on = [ "u", "D" ]
+[[mgr.prepend_keymap]]
+on = ["u", "D"]
 run = "plugin yamb delete_by_fzf"
 desc = "Delete bookmark by fzf"
 
-[[manager.prepend_keymap]]
-on = [ "u", "A" ]
+[[mgr.prepend_keymap]]
+on = ["u", "A"]
 run = "plugin yamb delete_all"
 desc = "Delete all bookmarks"
 
-[[manager.prepend_keymap]]
-on = [ "u", "r" ]
+[[mgr.prepend_keymap]]
+on = ["u", "r"]
 run = "plugin yamb rename_by_key"
 desc = "Rename bookmark by key"
 
-[[manager.prepend_keymap]]
-on = [ "u", "R" ]
+[[mgr.prepend_keymap]]
+on = ["u", "R"]
 run = "plugin yamb rename_by_fzf"
 desc = "Rename bookmark by fzf"
 
-[[manager.prepend_keymap]]
-on   = "F"
-run  = "plugin smart-filter"
+[[mgr.prepend_keymap]]
+on = "F"
+run = "plugin smart-filter"
 desc = "Smart filter"
 
-[[manager.prepend_keymap]]
-on	 = "!"
-run  = 'shell "$SHELL" --block'
+[[mgr.prepend_keymap]]
+on = "!"
+run = 'shell "$SHELL" --block'
 desc = "Open shell here"
 
-[[manager.prepend_keymap]]
-on   = "<C-d>"
-run  = "plugin diff"
+[[mgr.prepend_keymap]]
+on = "<C-d>"
+run = "plugin diff"
 desc = "Diff the selected with the hovered file"
 
-[[manager.prepend_keymap]]
-on   = "M"
-run  = "plugin mount"
+[[mgr.prepend_keymap]]
+on = "M"
+run = "plugin mount"
 desc = "Mount device"
