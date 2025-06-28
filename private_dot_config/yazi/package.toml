@@ -1,6 +1,6 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "63f9650"
+rev = "2ad42fa"
 hash = "3996fc74044bc44144b323686f887e1"
 
 [[plugin.deps]]
@@ -10,18 +10,18 @@ hash = "b4040931f0d2f9670ddb4923e55cd881"
 
 [[plugin.deps]]
 use = "Reledia/glow"
-rev = "2da96e3"
-hash = "f9ee1436e3b853508d87f7d49dce56e6"
+rev = "bd3eaa5"
+hash = "92b5c58159a51c567f82b618cee2b78"
 
 [[plugin.deps]]
 use = "ndtoan96/ouch"
-rev = "10b4627"
-hash = "3ec6a973d506665f1570a9fe08343fd8"
+rev = "1ee69a5"
+hash = "63679f3daf8551ff8755be38b5ced0f"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "63f9650"
-hash = "d0ad0c1946b46a30c8489735fe8de41c"
+rev = "2ad42fa"
+hash = "1adc12c2b2b025411ab61eb8f0879574"
 
 [[plugin.deps]]
 use = "Lil-Dank/lazygit"
@@ -35,33 +35,33 @@ hash = "7cc42012a7c2099f80064d228feb8d44"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:smart-filter"
-rev = "63f9650"
-hash = "4d82cd9e7534d976f000edf9c0f68d8f"
+rev = "2ad42fa"
+hash = "a9d553bd19a3cd7f4eab3abaac5d67ff"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "63f9650"
-hash = "bf6f074cd41ee33c3360341d168f9733"
+rev = "2ad42fa"
+hash = "e01006bfb38951ea89031bd918b20dbb"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:diff"
-rev = "63f9650"
+rev = "2ad42fa"
 hash = "47865a70cade14a0b9b6bc6a54f16bdb"
 
 [[plugin.deps]]
 use = "boydaihungst/mediainfo"
-rev = "c6d0de7"
-hash = "7b024fc14b462235068400207cbe7bf0"
+rev = "b74b7b8"
+hash = "4b6ac1a6fd7ba02a945070ad39fc1999"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:toggle-pane"
-rev = "63f9650"
-hash = "d5d4f3527592da5fbe77fd6f51815f80"
+rev = "2ad42fa"
+hash = "d6f60c24d8c0cf57a855bf46115b2502"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:mount"
-rev = "63f9650"
-hash = "c0b6cd7dc830b96e77e5c8a71eec7926"
+rev = "2ad42fa"
+hash = "b3f1d6ec3721d4061aad5f69cddb0cf9"
 
 [[plugin.deps]]
 use = "KKV9/compress"
